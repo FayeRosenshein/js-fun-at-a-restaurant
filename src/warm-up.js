@@ -13,15 +13,25 @@
 // var type = "Dessert";
 // var inStock = 10
 
+var food = 'pizza'
+var type = 'dinner'
+var inStock = 5
 
 
-// Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make 
+// Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
 
+inStock = 4
 
-// Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack! 
+inStock = inStock * 2
+
+console.log(inStock);
+
+// Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
 
+inStock = inStock -= 1;
+console.log(inStock);
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
@@ -40,7 +50,7 @@
 
 
 // Express the following in code: If the variable "stockCount" is greater or equal to 1, log
-// the statement 'I'm going to eat some [food]!', otherwise, log the statement 
+// the statement 'I'm going to eat some [food]!', otherwise, log the statement
 // 'We need to get some more [food].'
 
 
