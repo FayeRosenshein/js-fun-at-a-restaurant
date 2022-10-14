@@ -1,5 +1,4 @@
 function nameMenuItem(menuItemName) {
-  console.log(`Delicious ${menuItemName}`)
   return `Delicious ${menuItemName}`
 }
 function createMenuItem(name, price, type) {
@@ -9,37 +8,34 @@ function createMenuItem(name, price, type) {
     type: type
   }
 }
-function addIngredients (item, list) {
+function addIngredients(item, list) {
   if (list.includes(item) === false) {
     list.push(item)
   }
-  return list 
+  return list
 }
-function formatPrice (price) {
-  console.log(`$${price}`)
+function formatPrice(price) {
   return `$${price}`
 }
-function decreasePrice (price) {
+function decreasePrice(price) {
   var discountedPrice = price * .9
-  console.log(discountedPrice)
-  return discountedPrice 
+  return discountedPrice
 }
 
-function createRecipe (name, ingredients, menuItemType) {
+function createRecipe(name, ingredients, menuItemType) {
   var recipe = {
-  title: name,
-  ingredients: ingredients,
-  type: menuItemType,
+    title: name,
+    ingredients: ingredients,
+    type: menuItemType,
   }
-  console.log(recipe)
   return recipe
 }
 
 module.exports = {
   nameMenuItem,
-   createMenuItem,
-   addIngredients,
-   formatPrice,
-   decreasePrice,
-   createRecipe
+  createMenuItem,
+  addIngredients,
+  formatPrice,
+  decreasePrice,
+  createRecipe
 }
