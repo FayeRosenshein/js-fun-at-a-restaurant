@@ -9,19 +9,37 @@ function createMenuItem(name, price, type) {
     type: type
   }
 }
-function addIngredients (food) {
-  var ingredients = []
-   //addIngredients = ingredients.push('cheese')
-   ingredients.push(food)
-   console.log(ingredients);
-   return ingredients
+function addIngredients (item, list) {
+  if (list.includes(item) === false) {
+    list.push(item)
+  }
+  return list 
+}
+function formatPrice (price) {
+  console.log(`$${price}`)
+  return `$${price}`
+}
+function decreasePrice (price) {
+  var discountedPrice = price * .9
+  console.log(discountedPrice)
+  return discountedPrice 
+}
+
+function createRecipe (name, ingredients, menuItemType) {
+  var recipe = {
+  title: name,
+  ingredients: ingredients,
+  type: menuItemType,
+  }
+  console.log(recipe)
+  return recipe
 }
 
 module.exports = {
   nameMenuItem,
    createMenuItem,
    addIngredients,
-  // formatPrice,
-  // decreasePrice,
-  // createRecipe
+   formatPrice,
+   decreasePrice,
+   createRecipe
 }
