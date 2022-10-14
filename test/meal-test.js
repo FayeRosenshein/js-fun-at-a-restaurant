@@ -33,11 +33,11 @@ describe("meal.js", function() {
   });
 
   describe("createMenuItem", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(createMenuItem);
     });
 
-    it.skip("should create a menu item object", function() {
+    it("should create a menu item object", function() {
       var menuItemName = nameMenuItem("French Toast");
       var menuItem = createMenuItem(menuItemName, 10.99, "breakfast");
 
@@ -48,11 +48,11 @@ describe("meal.js", function() {
   });
 
   describe("addIngredients", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(addIngredients);
     });
 
-    it.skip("should be able to add ingredients to an array", function() {
+    it("should be able to add ingredients to an array", function() {
       var ingredients = [];
 
       addIngredients("cheese", ingredients);

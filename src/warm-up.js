@@ -36,13 +36,20 @@ console.log(inStock);
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
 
-
+var isFavorite = true
 
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
 // assign a boolean value to this variable. If "inStock" is less than 20, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
+var shouldOrderMore === true
+if (inStock < 20) {
+  shouldOrderMore === true
+} else {
+  shouldOrderMore === false
+}
+console.log(shouldOrderMore);
 
 
 //------------------------- Conditionals -------------------------//
@@ -53,6 +60,12 @@ console.log(inStock);
 // the statement 'I'm going to eat some [food]!', otherwise, log the statement
 // 'We need to get some more [food].'
 
+var stockCount = 5
+if (stockCount >= 1) {
+  console.log(`I'm going to eat some ${food}!`);
+} else {
+  console.log(`We need to get some more ${food}`);
+}
 
 
 // Express the following in code: If the variable "isFavorite" is true,
@@ -60,6 +73,11 @@ console.log(inStock);
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
+if (isFavorite === true) {
+  console.log(`My favorite food is ${food}`)
+} else {
+  console.log(`I recently ate ${food}`)
+}
 
 
 //------------------------- Arrays -------------------------//
@@ -68,6 +86,7 @@ console.log(inStock);
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
 
+var vegetables = []
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
